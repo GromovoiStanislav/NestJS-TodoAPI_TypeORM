@@ -10,6 +10,7 @@ async function bootstrap() {
     .setTitle("NestJS Todo API")
     .setDescription("Todo Api")
     .setVersion("1.0")
+    .addBearerAuth()
     .build();
   app.setGlobalPrefix("api");
   const document = SwaggerModule.createDocument(app, config);
